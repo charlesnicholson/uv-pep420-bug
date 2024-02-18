@@ -1,4 +1,4 @@
-Trivial repro case for a bug where uv and pip diverge. There are two PEP420 packages, `ns1.package1` and `ns2.package2` (which depends on the former). `pip install -e` one by one works fine, but `uv pip install -e` fails on `ns2.package2`:
+Trivial repro case for a `uv` bug (https://github.com/astral-sh/uv/issues/1661) where uv and pip diverge. There are two PEP420 packages, `ns1.package1` and `ns2.package2` (which depends on the former). `pip install -e` one by one works fine, but `uv pip install -e` fails on `ns2.package2`:
 
 # pip-test.sh
 See that `pip install -e` is able to resolve the `ns1.package1` dependency; it's already editable-installed into the venv so it's trivially satisfied.
