@@ -18,6 +18,6 @@ fi
 
 "${SCRIPT_DIR}/uv" venv -p python3 --seed "${SCRIPT_DIR}/venv"
 VIRTUAL_ENV="${SCRIPT_DIR}/venv" "${SCRIPT_DIR}/uv" pip install build
-VIRTUAL_ENV="${SCRIPT_DIR}/venv" "${SCRIPT_DIR}/uv" pip install -e "${SCRIPT_DIR}/ns1"
-VIRTUAL_ENV="${SCRIPT_DIR}/venv" "${SCRIPT_DIR}/uv" pip install -e "${SCRIPT_DIR}/ns2"
+VIRTUAL_ENV="${SCRIPT_DIR}/venv" "${SCRIPT_DIR}/uv" pip install -e "${SCRIPT_DIR}/ns1.package1"
+VIRTUAL_ENV="${SCRIPT_DIR}/venv" "${SCRIPT_DIR}/uv" pip install -e "${SCRIPT_DIR}/ns2.package2"
 "${SCRIPT_DIR}/venv/bin/python" "${SCRIPT_DIR}/test.py"

@@ -1,4 +1,4 @@
-from package1 import p1_func
+from ns1.package1 import p1_func
 
 def p2_func() -> None:
     p1_func()

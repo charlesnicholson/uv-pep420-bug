@@ -13,6 +13,6 @@ fi
 
 python3 -m venv "${SCRIPT_DIR}/venv"
 "${SCRIPT_DIR}/venv/bin/python" -m pip install --upgrade pip setuptools wheel build
-"${SCRIPT_DIR}/venv/bin/python" -m pip install -e ns1
-"${SCRIPT_DIR}/venv/bin/python" -m pip install -e ns2
+"${SCRIPT_DIR}/venv/bin/python" -m pip install -e ns1.package1
+"${SCRIPT_DIR}/venv/bin/python" -m pip install -e ns2.package2
 "${SCRIPT_DIR}/venv/bin/python" "${SCRIPT_DIR}/test.py"
